@@ -1,0 +1,9 @@
+2025-02-07 17:42:04,999 - ***************This is the logging book for FMNIST datasets******************
+2025-02-07 17:42:05,489 - From D:\software\anaconda\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+2025-02-07 17:42:05,997 - From D:\software\anaconda\Lib\site-packages\keras\src\engine\base_layer_utils.py:384: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2025-02-07 18:11:37,094 - training : 1772.09 seconds
+2025-02-07 18:11:42,577 - Inference time: 5.4689 seconds
+2025-02-07 18:11:45,824 - 
+Accuracy: 0.9183

@@ -1,0 +1,150 @@
+2025-02-05 21:45:33,751 - Starting model training...
+2025-02-05 21:46:17,090 - Starting model training...
+2025-02-05 21:46:17,632 - Extracting features for train set...
+2025-02-05 22:18:30,238 - Feature extraction for train completed in 1932.61 seconds
+2025-02-05 22:18:30,505 - Saved features and labels to train_features-f.npy and train_labels-f.npy
+
+2025-02-05 22:18:30,526 - Extracting features for test set...
+2025-02-05 22:23:46,599 - Feature extraction for test completed in 316.07 seconds
+2025-02-05 22:23:46,772 - Saved features and labels to test_features-f.npy and test_labels-f.npy
+
+2025-02-05 22:23:49,145 - Training SVM...
+2025-02-05 22:40:41,284 - SVM - Training time: 925.4544 seconds
+2025-02-05 22:40:41,284 - SVM - Accuracy: 97.25%
+2025-02-05 22:40:41,284 - SVM - Best Parameters: {}
+2025-02-05 22:40:41,285 - SVM - Confusion Matrix: 
+[[ 974    0    3    0    0    0    2    0    0    1]
+ [   0 1128    4    0    0    0    0    3    0    0]
+ [   1    2 1002    3    1    7    4    6    4    2]
+ [   1    0    7  975    0   20    0    3    3    1]
+ [   1    1    2    0  964    0    2    3    3    6]
+ [   2    1   11   23    0  845    3    2    3    2]
+ [  10    2    3    1    5    2  934    0    1    0]
+ [   0    7   12    5    3    1    0  995    0    5]
+ [   3    0    9   11    1    2    2    0  946    0]
+ [   8    1    7    6   11    4    2    5    3  962]]
+2025-02-05 22:40:41,285 - SVM - Classification Report: 
+              precision    recall  f1-score   support
+
+           0       0.97      0.99      0.98       980
+           1       0.99      0.99      0.99      1135
+           2       0.95      0.97      0.96      1032
+           3       0.95      0.97      0.96      1010
+           4       0.98      0.98      0.98       982
+           5       0.96      0.95      0.95       892
+           6       0.98      0.97      0.98       958
+           7       0.98      0.97      0.97      1028
+           8       0.98      0.97      0.98       974
+           9       0.98      0.95      0.97      1009
+
+    accuracy                           0.97     10000
+   macro avg       0.97      0.97      0.97     10000
+weighted avg       0.97      0.97      0.97     10000
+
+2025-02-05 22:40:41,823 - Training Naive Bayes...
+2025-02-05 22:40:49,226 - Naive Bayes - Training time: 5.5041 seconds
+2025-02-05 22:40:49,227 - Naive Bayes - Accuracy: 81.89%
+2025-02-05 22:40:49,227 - Naive Bayes - Best Parameters: {}
+2025-02-05 22:40:49,227 - Naive Bayes - Confusion Matrix: 
+[[ 908    5    7    2   18    2   12    7    4   15]
+ [   0 1107    1    0    8    0    3   16    0    0]
+ [  14    9  617   77   33  200   26   21   29    6]
+ [   2    2   30  849   15   69   12    7    8   16]
+ [   0   13   34    2  871   16    9   12    0   25]
+ [   4    1   25  169   12  631   12   26    3    9]
+ [  54    9   20    4   20   37  783    8    1   22]
+ [   3   17   49    3   92   39    2  797    0   26]
+ [  28    4   20   56   16   13   13    4  800   20]
+ [  35    7   19   19   15   53   12   16    7  826]]
+2025-02-05 22:40:49,227 - Naive Bayes - Classification Report: 
+              precision    recall  f1-score   support
+
+           0       0.87      0.93      0.90       980
+           1       0.94      0.98      0.96      1135
+           2       0.75      0.60      0.67      1032
+           3       0.72      0.84      0.77      1010
+           4       0.79      0.89      0.84       982
+           5       0.60      0.71      0.65       892
+           6       0.89      0.82      0.85       958
+           7       0.87      0.78      0.82      1028
+           8       0.94      0.82      0.88       974
+           9       0.86      0.82      0.84      1009
+
+    accuracy                           0.82     10000
+   macro avg       0.82      0.82      0.82     10000
+weighted avg       0.83      0.82      0.82     10000
+
+2025-02-05 22:40:49,673 - Training Random Forest...
+2025-02-06 00:46:34,011 - Random Forest - Training time: 7542.5494 seconds
+2025-02-06 00:46:34,012 - Random Forest - Accuracy: 94.53%
+2025-02-06 00:46:34,012 - Random Forest - Best Parameters: {'max_depth': 20, 'n_estimators': 200}
+2025-02-06 00:46:34,013 - Random Forest - Confusion Matrix: 
+[[ 963    0    1    0    2    1    5    2    3    3]
+ [   0 1123    2    0    5    0    2    3    0    0]
+ [   4    0  960    8   13   24   11    8    4    0]
+ [   0    0   21  947    3   25    2    4    6    2]
+ [   1    1    6    0  954    1    4    2    0   13]
+ [   1    2   17   49    4  787    9   17    6    0]
+ [  18    4    8    2   11    6  907    1    1    0]
+ [   2    5   15    1   26    0    0  976    0    3]
+ [  10    2   10   13    5    6    8    3  907   10]
+ [  19    2    6    8   12   12    6   12    3  929]]
+2025-02-06 00:46:34,013 - Random Forest - Classification Report: 
+              precision    recall  f1-score   support
+
+           0       0.95      0.98      0.96       980
+           1       0.99      0.99      0.99      1135
+           2       0.92      0.93      0.92      1032
+           3       0.92      0.94      0.93      1010
+           4       0.92      0.97      0.95       982
+           5       0.91      0.88      0.90       892
+           6       0.95      0.95      0.95       958
+           7       0.95      0.95      0.95      1028
+           8       0.98      0.93      0.95       974
+           9       0.97      0.92      0.94      1009
+
+    accuracy                           0.95     10000
+   macro avg       0.94      0.94      0.94     10000
+weighted avg       0.95      0.95      0.95     10000
+
+2025-02-06 00:46:34,448 - Training KNN...
+2025-02-06 00:51:10,426 - KNN - Training time: 255.6282 seconds
+2025-02-06 00:51:10,426 - KNN - Accuracy: 95.08%
+2025-02-06 00:51:10,427 - KNN - Best Parameters: {'n_neighbors': 7}
+2025-02-06 00:51:10,427 - KNN - Confusion Matrix: 
+[[ 977    0    0    1    0    1    1    0    0    0]
+ [   0 1126    3    1    1    0    1    3    0    0]
+ [   6    0  967   11    6   30    5    7    0    0]
+ [   1    0   15  950    1   40    2    0    0    1]
+ [   1    2    6    0  960    1    2    3    0    7]
+ [   2    1   21   57    0  800    6    4    0    1]
+ [  24    3    8    4    2    8  908    1    0    0]
+ [   1    5   14    4   24    1    2  975    0    2]
+ [   7    0   10   21    4    8    4    1  911    8]
+ [  18    4    5   14    6    9    4   11    4  934]]
+2025-02-06 00:51:10,428 - KNN - Classification Report: 
+              precision    recall  f1-score   support
+
+           0       0.94      1.00      0.97       980
+           1       0.99      0.99      0.99      1135
+           2       0.92      0.94      0.93      1032
+           3       0.89      0.94      0.92      1010
+           4       0.96      0.98      0.97       982
+           5       0.89      0.90      0.89       892
+           6       0.97      0.95      0.96       958
+           7       0.97      0.95      0.96      1028
+           8       1.00      0.94      0.96       974
+           9       0.98      0.93      0.95      1009
+
+    accuracy                           0.95     10000
+   macro avg       0.95      0.95      0.95     10000
+weighted avg       0.95      0.95      0.95     10000
+
+2025-02-06 00:52:40,756 - SVM - Total Inference Time: 87.1308 seconds
+2025-02-06 00:52:40,756 - SVM - Average Inference Time per Sample: 0.008713 seconds
+2025-02-06 00:52:42,768 - Naive Bayes - Total Inference Time: 2.0121 seconds
+2025-02-06 00:52:42,769 - Naive Bayes - Average Inference Time per Sample: 0.000201 seconds
+2025-02-06 00:52:44,547 - Random Forest - Total Inference Time: 1.7780 seconds
+2025-02-06 00:52:44,547 - Random Forest - Average Inference Time per Sample: 0.000178 seconds
+2025-02-06 00:53:05,134 - KNN - Total Inference Time: 20.5868 seconds
+2025-02-06 00:53:05,134 - KNN - Average Inference Time per Sample: 0.002059 seconds

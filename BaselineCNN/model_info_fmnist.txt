@@ -1,0 +1,2 @@
+training time: 1772.09 s
+accuracy on test: 0.9183
